@@ -1,0 +1,1054 @@
+@import url('https://fonts.googleapis.com/css2?family=Anek+Tamil:wght@100..800&family=Archivo:ital,wght@0,100..900;1,100..900&family=Cairo:wght@200..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Resetare stiluri implicite */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+/* Stilizare header */
+header {
+    padding: 30px 0;
+    width: 100%;
+    box-shadow: none; /* Elimină umbra */
+    border-bottom: none; 
+}
+
+/* Container pentru header */
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Logo pe stânga, meniu pe dreapta */
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0px;
+    box-shadow: none; 
+}
+
+/* Logo */
+.logo-container img {
+    height: 50px; /* Dimensiune potrivită */
+}
+
+/* Meniu */
+.menu {
+    display: flex;
+    gap: 30px; /* Spațiere între linkuri */
+}
+
+.menu a {
+    text-decoration: none;
+    color: #020307;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px;
+    font-family: "Inter";
+    
+}
+
+.menu a:hover {
+    color: #8A002C; /* Schimbare culoare la hover */
+}
+
+.hero-section {
+    
+    width: 1200px;
+    height: 900px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+
+.text-block-s1 {
+
+margin-top: -230px;
+width: 1200px;
+}
+
+h1 {
+    
+    font-family: "Inter";
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 130%;
+    color: white;
+        
+}
+
+.h1 {
+    width: 313px;
+    padding-bottom: 32px;
+}
+
+.p1 {
+    width: 615px;
+}
+
+/* Responsive pentru ecrane mici */
+@media (max-width: 768px) {
+    .menu {
+        display: none; /* Ascundem meniul pe mobil */
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        background: white;
+        padding: 10px;
+        
+    }
+
+    .menu-icon {
+        display: block; /* Afișăm iconița de meniu */
+        cursor: pointer;
+        margin-left: 15px;
+    }
+
+    /* Stil pentru meniul deschis */
+    .menu.show {
+        display: flex;
+    }
+}
+
+/* Stil pentru selectarea limbii */
+.language-selector {
+    display: flex;
+    align-items: center;
+    gap: 5px; /* Spațiu între steag și text */
+    font-size: 16px;
+    font-weight: bold;
+    color: #020307;
+    cursor: pointer;
+    font-family: "Inter";
+}
+
+/* Stil pentru iconița limbii */
+.lang-icon {
+    width: 15px; /* Dimensiunea iconiței */
+    height: auto;
+    
+}
+
+.hero-section {
+    position: relative;
+    width: 100%;
+    height: 900px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    padding: 30px;
+    overflow: hidden;
+}
+
+.hero-section .hero-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    object-fit: cover; /* Asigură adaptarea imaginii la dimensiunea secțiunii */
+    z-index: -1; /* Trimite imaginea în fundal */
+}
+.container {
+    text-align: left; /* Aliniere la stânga */
+    max-width: 600px; /* Limitează lățimea conținutului pentru o compoziție mai echilibrată */
+    padding-left: 20px; /* O margine interioară pentru un spațiu frumos */
+}
+
+h1 {
+    
+    font-family: "Inter";
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 130%;
+    color: white;
+        
+}
+
+.h1 {
+    width: 813px;
+}
+
+p {
+    font-size: 16px;
+    font-family: "Inter";
+    color: #E8E8E8;
+    margin-bottom: 20px; /* Spațiu între paragraf și buton */
+    line-height: 150%;
+    font-weight: 400;
+}
+
+.btn-principal {
+    display: inline-block;
+    background-color: #8A002C; /* Culoarea butonului */
+    color: white;
+    text-decoration: none;
+    padding: 12px 32px;
+    font-size: 16px;
+    font-family: "Inter";
+    font-weight: bold;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.btn-principal:hover {
+    background-color: #85001d; /* Ușor mai închis la hover */
+}
+
+  
+.featured-categories {
+    padding: 0px 128px;
+    text-align: center;
+}
+
+.featured-categories h2 {
+    font-family: "Inter";
+    font-weight: 700;
+    font-size: 38px;
+    margin-bottom: 40px;
+    line-height: 130%;
+}
+
+.categories-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.category-item {
+    background-color: #f8f8f8;
+    border-radius: 5px;
+    overflow: hidden;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.category-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.category-item h3 {
+    padding: 15px;
+    margin: 0;
+    font-size: 20px;
+    text-align: center;
+    font-family: "Inter";
+    font-weight: 700;
+    line-height: 150%;
+}
+
+
+.banner {
+  margin-top: 0px;
+  width: 100%;
+  height: 369px;
+  overflow: hidden;
+}
+
+.banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+
+.despre-fabrica {
+    display: flex;
+    align-items: center;
+    padding: 0px 50px;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.fabrica-text {
+    flex: 1;
+}
+
+.fabrica-text h2 {
+   font-family: "Inter";
+    font-weight: 700;
+    font-size: 38px;
+    margin-bottom: 32px;
+    line-height: 130%;
+}
+
+.fabrica-text p {
+    font-size: 16px;
+    font-family: "Inter";
+    color:black;
+    margin-bottom: 15px; /* Spațiu între paragraf și buton */
+    line-height: 150%;
+    font-weight: 400;
+}
+
+.fabrica-text-button {
+    display: inline-block;
+    background-color: #8A002C; /* Culoarea butonului */
+    color: white;
+    text-decoration: none;
+    padding: 12px 32px;
+    font-size: 16px;
+    font-family: "Inter";
+    font-weight: bold;
+    border-radius: 5px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.fabrica-text button:hover {
+    background-color: #85001d; /* Ușor mai închis la hover */
+}
+
+
+.fabrica-image {
+    flex: 1;
+}
+
+.fabrica-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+/* Ajustări responsive pentru secțiunea DESPRE FABRICA */
+@media (max-width: 768px) {
+    .despre-fabrica {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .fabrica-image {
+        margin-bottom: 50px;
+    }
+}
+
+
+.banner2 {
+  margin-top: 0px;
+  width: 100%;
+  height: 589px;
+  overflow: hidden;
+}
+
+.banner2 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Stilizarea pentru secțiunea CAFENELE */
+.cafenele {
+    display: flex;
+    align-items: center;
+    padding: 0px 0px;
+    gap: 80px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.cafenele-image {
+    flex: 1;
+}
+
+.cafenele-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.cafenele-text {
+    flex: 1;
+}
+
+.cafenele-text h2 {
+    font-family: "Inter";
+    font-weight: 700;
+    font-size: 38px;
+    margin-bottom: 32px;
+    line-height: 130%;
+}
+
+.cafenele-text p {
+    font-size: 16px;
+    font-family: "Inter";
+    color:black;
+    margin-bottom: 15px; /* Spațiu între paragraf și buton */
+    line-height: 150%;
+    font-weight: 400;
+}
+
+/* Ajustări responsive pentru secțiunea CAFENELE */
+@media (max-width: 768px) {
+    .cafenele {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .cafenele-image {
+        margin-bottom: 20px;
+    }
+}
+
+
+/* Stilizarea pentru footer */
+footer {
+    background-color: #000; /* Fundal negru */
+    color: #fff; /* Text alb */
+    padding: 50px;
+    text-align: center; /* Aliniază textul central pe ecrane mici */
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between; /* Distribuie spațiul între elemente */
+    align-items: center; /* Aliniază vertical elementele */
+    max-width: 1200px; /* Lățime maximă pentru a se alinia cu restul conținutului */
+    margin: 0 auto; /* Centrează footer-ul */
+}
+
+.social-icons a {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.social-icons img {
+    width: 40px; /* Dimensiunea iconițelor */
+    height: 40px;
+    vertical-align:middle; /* Aliniază iconițele cu textul */
+    padding: 5px;
+}
+
+.payment-methods img {
+    height: 25px; /* Înălțimea logo-urilor metodelor de plată */
+    margin-left: 10px;
+    vertical-align: middle;
+}
+
+/* Ajustări responsive pentru footer */
+@media (max-width: 600px) {
+    .footer-content {
+        flex-direction: column; /* Stack elementele pe ecrane mici */
+        align-items: center;
+    }
+
+    .social-icons {
+        margin-bottom: 10px;
+    }
+
+    .payment-methods {
+        margin-top: 10px;
+    }
+}
+
+
+
+
+/* Stiluri specifice pentru pagina de detalii prăjituri (desprenoi.html) */
+
+.details-section {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-bottom: 128px;
+    padding-top: 15px;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 50px;
+}
+
+.details-image {
+    flex: 1;
+    max-width: 50%;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.details-image img {
+    width: 100%;
+    height: 500px;
+    display: block;
+}
+
+.details-content {
+    flex: 1;
+    max-width: 50%;
+}
+
+.details-content p {
+    line-height: 150%;
+    font-size: 16px;
+    font-family: "Inter";
+    font-weight: 400;
+    margin-bottom: 25px;
+    color:#555555;
+    font-size: 16px;
+}
+
+.details-grid { /* Nu este folosit în HTML-ul actual, dar e bine să îl ai dacă vrei grid */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.grid-item { /* Nu este folosit în HTML-ul actual, dar e bine să îl ai dacă vrei grid */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.grid-item img {
+    max-width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.grid-item p {
+    font-size: 16 px;
+    color: #555555;
+    line-height: 150%;
+}
+
+/* Stilizarea pentru footer */
+footer {
+    background-color: #000; /* Fundal negru */
+    color: #fff; /* Text alb */
+    padding: 50px;
+    text-align: center; /* Aliniază textul central pe ecrane mici */
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between; /* Distribuie spațiul între elemente */
+    align-items: center; /* Aliniază vertical elementele */
+    max-width: 1200px; /* Lățime maximă pentru a se alinia cu restul conținutului */
+    margin: 0 auto; /* Centrează footer-ul */
+}
+
+.social-icons a {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.social-icons img {
+    width: 40px; /* Dimensiunea iconițelor */
+    height: 40px;
+    vertical-align:middle; /* Aliniază iconițele cu textul */
+    padding: 5px;
+}
+
+.payment-methods img {
+    height: 25px; /* Înălțimea logo-urilor metodelor de plată */
+    margin-left: 10px;
+    vertical-align: middle;
+}
+
+
+/* Media Queries (Responsive Design) */
+@media (max-width: 1100px) {
+    /* Ajustări pentru .despre-fabrica de pe Landing Page */
+    .despre-fabrica {
+        flex-direction: column;
+        text-align: center;
+        align-items: stretch;
+        position: static;
+        overflow: visible; /* Lasă overflow-ul vizibil pe mobile */
+    }
+
+    .despre-fabrica .fabrica-text {
+        padding-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .despre-fabrica .fabrica-image {
+        position: static;
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-width: 992px) {
+    /* Ajustări generale pentru flex container-e (despre-fabrica-page, cafenele, details-section) */
+    .despre-fabrica-page,
+    .cafenele,
+    .details-section {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .despre-fabrica-page .fabrica-image-page,
+    .cafenele-image,
+    .details-image,
+    .details-content {
+        max-width: 100%;
+        padding-left: 0;
+        margin-top: 20px; /* Spațiu între imagine și text pe mobile */
+    }
+    .cafenele-image {
+        margin-bottom: 20px; /* Adaugă spațiu sub imagine */
+    }
+    .details-content {
+        margin-top: 30px;
+    }
+    .details-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .main-header {
+        flex-direction: column;
+        text-align: center;
+    }
+    nav ul {
+        flex-direction: column;
+        margin-top: 15px;
+    }
+    nav li {
+        margin: 5px 0;
+    }
+    .hero-section {
+        padding: 80px 15px;
+    }
+    .hero-content h1 {
+        font-size: 2.5em;
+    }
+    .hero-content p {
+        font-size: 1em;
+    }
+    .featured-categories h2 {
+        font-size: 1.8em;
+    }
+    .cupcakes-banner {
+        padding: 60px 15px;
+    }
+    .despre-fabrica .fabrica-text h2,
+    .cafenele-text h2,
+    .details-content h2,
+    .page-intro h1 {
+        font-size: 2em;
+    }
+    .page-intro p {
+        font-size: 1em;
+    }
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+    .social-icons {
+        margin-bottom: 10px;
+    }
+    .payment-methods {
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-content h1 {
+        font-size: 2em;
+    }
+    .featured-categories h2 {
+        font-size: 1.6em;
+    }
+    .despre-fabrica .fabrica-text h2,
+    .cafenele-text h2,
+    .details-content h2,
+    .page-intro h1 {
+        font-size: 1.8em;
+    }
+    .button {
+        padding: 12px 25px;
+        font-size: 0.9em;
+    }
+
+}
+
+
+
+/* Stiluri specifice pentru pagina CATALOG (catalog.html) */
+.catalog-page-content {
+    max-width: 1200px; /* Lățime maximă pentru conținutul paginii */
+    margin: auto;
+    padding-bottom: 128px;
+    padding-top: 15px;
+}
+
+.catalog-main-title {
+    text-align: center;
+    color: #000000;
+    font-family: "Inter";
+    font-weight: 700;
+    font-size: 38px;
+    margin-bottom: 32px;
+    line-height: 130%;
+}
+
+.catalog-categories-nav {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centrează butoanele și lista de categorii */
+    margin-bottom: 60px;
+}
+
+.categories-list {
+    display: flex;
+    overflow-x: auto; /* Permite derularea pe orizontală dacă sunt prea multe categorii */
+    white-space: nowrap; /* Previne împachetarea textului pe rânduri noi */
+    padding: 0 10px; /* Spațiere internă */
+    scroll-behavior: smooth; /* Animație la derulare */
+    scrollbar-width: none;  /* Ocultă scrollbar-ul pe Firefox */
+}
+
+.categories-list::-webkit-scrollbar {
+    display: none; /* Ocultă scrollbar-ul pe Chrome, Safari, Opera */
+}
+
+.category-nav-item {
+    font-size: 16px;
+    font-family: "Inter";
+    margin-bottom: 15px; /* Spațiu între paragraf și buton */
+    line-height: 150%;
+    text-decoration: none;
+    color: black;
+    font-weight: regular;
+    padding: 10px 20px;
+    margin: 0 10px;
+    border-bottom: 2px solid transparent; /* Linie transparentă dedesubt */
+    transition: color 0.3s ease, border-color 0.3s ease;
+}
+
+.category-nav-item:hover {
+    color: #8A002C;
+    border-color:#8A002C;
+}
+
+.category-nav-item.active {
+    color: #8A002C; /* Culoare pentru categoria activă */
+    border-color: #8A002C; /* Linie roșie pentru categoria activă */
+}
+
+.nav-arrow {
+    background: none;
+    border: none;
+    font-size: 2em;
+    color: #333;
+    cursor: pointer;
+    padding: 5px 10px;
+    transition: color 0.3s ease;
+}
+
+.nav-arrow:hover {
+    color: #8A002C;
+}
+
+/* Stiluri pentru grila de produse */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); /* 3 coloane pe ecrane mari, se adaptează */
+    gap: 75px;
+    justify-content: center; /* Centrează produsele în grilă */
+}
+
+.product-item {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+    text-align: center;
+    padding-bottom: 30px;
+    transition: transform 0.3s ease;
+}
+
+.product-item:hover {
+    transform: translateY(-5px); /* Efect subtil la hover */
+}
+
+.product-image {
+    width: 100%;
+    height: 310px; /* Înălțime fixă pentru imagini, ajustează după nevoie */
+    object-fit: cover; /* Asigură că imaginea umple spațiul fără distorsiuni */
+    display: block;
+    margin-bottom: 15px;
+}
+
+.product-title {
+    font-size: 20px;
+    font-family: "Inter";
+    font-weight: 700;
+    color: black;
+    margin-bottom: 20px;
+    padding: 0 15px;
+    padding-top: 15px;
+}
+
+.product-description {
+    font-size: 16px;
+    color:#555555;
+    line-height: 150%;
+    margin-bottom: 20px;
+    padding: 0 15px;
+    font-family: "Inter";
+    font-weight: 400;
+}
+
+.product-price {
+    font-size: 16px;
+    font-weight: bold;
+    color: #8A002C; /* Culoare roșie pentru preț */
+    border: 1px solid #8A002C;
+    display: inline-block; /* Pentru a face bordura să înconjoare doar textul prețului */
+    border-radius: 5px;
+    padding: 12px 32px;
+    font-family: "Inter";
+}
+
+
+/* Media Queries (Responsive Design) - Asigură-te că le ai deja, adaptează-le */
+/* (Acestea sunt preluate din codul anterior, nu le mai repet complet aici,
+   doar adaugă-le pe cele specifice pentru Catalog) */
+
+@media (max-width: 768px) {
+    .catalog-main-title {
+        font-size: 2.2em;
+    }
+    .catalog-categories-nav {
+        flex-wrap: wrap; /* Permite butoanelor și listei să se aranjeze pe mai multe rânduri */
+    }
+    .categories-list {
+        width: 100%; /* Ocupă toată lățimea disponibilă */
+        justify-content: center; /* Centrează itemii de categorie */
+        margin-top: 15px;
+    }
+    .nav-arrow {
+        font-size: 1.5em;
+    }
+    .product-grid {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* 2 coloane pe tablete/mobile */
+        gap: 20px;
+    }
+    .product-image {
+        height: 200px;
+    }
+}
+
+@media (max-width: 480px) {
+    .catalog-main-title {
+        font-size: 1.8em;
+    }
+    .product-grid {
+        grid-template-columns: 1fr; /* O singură coloană pe telefoane mici */
+    }
+    .product-image {
+        height: 180px;
+    }
+}
+
+
+
+
+/* Stiluri specifice pentru pagina CONTACTE (contacte.html) */
+.contact-page-content {
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 20px;
+}
+
+.hidden-title {
+    /* Folosit pentru SEO și accesibilitate, dar ascuns vizual */
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+
+.contact-info-map {
+    display: flex;
+    justify-content: space-between;
+    gap: 60px;
+    margin-bottom: 50px;
+    align-items: flex-start; /* Aliniază la începutul containerului */
+}
+
+.contact-addresses {
+    flex: 1;
+    max-width: 50%;
+}
+
+.contact-addresses h2 {
+    text-align: left;
+    color: #000000;
+    font-family: "Inter";
+    font-weight: 700;
+    font-size: 38px;
+    margin-bottom: 32px;
+    line-height: 130%;
+}
+
+.address-item {
+    margin-bottom: 25px;
+}
+
+.address-item h3 {
+    font-size: 20px;
+    color: #8A002C; /* Culoare roșie pentru titlul locației */
+    margin-bottom: 5px;
+}
+
+.address-item p {
+    font-size: 16px;
+    color:black;
+    line-height: 150%;
+    margin-bottom: 20px;
+    font-family: "Inter";
+    font-weight: 400;
+}
+
+.contact-map {
+    flex: 1;
+    max-width: 50%;
+    background-color: #f0f0f0; /* Culoare de fundal pentru placeholder */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 400px; /* Înălțime minimă pentru hartă */
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.contact-map .map-placeholder {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Asigură că imaginea umple containerul */
+    display: block;
+}
+
+/* Stiluri pentru secțiunea de jos (imagine cu copii și detalii contact) */
+.contact-bottom-section {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    align-items: center; /* Centrează vertical */
+    margin-bottom: 50px;
+}
+
+.contact-image-kids {
+    flex: 1;
+    max-width: 50%;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.contact-image-kids img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.contact-details-text {
+    flex: 1;
+    max-width: 50%;
+    padding-left: 20px;
+}
+
+.contact-details-text h2 {
+    text-align: left;
+    color: #000000;
+    font-family: "Inter";
+    font-weight: 700;
+    font-size: 38px;
+    margin-bottom: 32px;
+    line-height: 130%;
+}
+
+.contact-details-text p {
+    font-size: 16px;
+    color:black;
+    line-height: 150%;
+    margin-bottom: 20px;
+    font-family: "Inter";
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.contact-details-text p a {
+    color: #8A002C;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact-details-text p a:hover {
+    text-decoration: underline;
+}
+
+/* Media Queries (Responsive Design) */
+@media (max-width: 992px) {
+    .contact-info-map,
+    .contact-bottom-section {
+        flex-direction: column; /* Stivuiește elementele pe verticală */
+        align-items: center; /* Centrează pe orizontală */
+        gap: 30px;
+    }
+
+    .contact-addresses,
+    .contact-map,
+    .contact-image-kids,
+    .contact-details-text {
+        max-width: 100%; /* Ocupă toată lățimea disponibilă */
+        padding-left: 0; /* Elimină padding-ul stânga */
+        text-align: center; /* Centrează textul */
+    }
+
+    .contact-addresses h2 {
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .contact-addresses h2,
+    .contact-details-text h2 {
+        font-size: 1.8em;
+    }
+    .address-item h3 {
+        font-size: 1.1em;
+    }
+    .address-item p,
+    .contact-details-text p {
+        font-size: 0.95em;
+    }
+    .contact-map {
+        min-height: 300px; /* Înălțime mai mică pentru hartă pe mobile */
+    }
+}
+
+
+
+
+
+
+
+
+
